@@ -19,8 +19,16 @@ namespace CollegeSystem2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DepartmentDTO>>> GetAll()
         {
-            var departments = await _service.GetAllAsync();
-            return Ok(departments);
+            try
+            {
+                throw new Exception("Something went wrong!"); // Force an error
+                var departments = await _service.GetAllAsync();
+                return Ok(departments);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]

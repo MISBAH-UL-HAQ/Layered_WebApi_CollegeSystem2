@@ -1,5 +1,6 @@
 using Application.Interfaces;
 using Application.Services;
+using CollegeSystem2.Middleware;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
@@ -37,6 +38,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseAuthorization();
 
