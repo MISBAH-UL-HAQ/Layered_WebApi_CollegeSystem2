@@ -21,7 +21,7 @@ namespace CollegeSystem2.Controllers
         {
             try
             {
-                throw new Exception("Something went wrong!"); // Force an error
+                //throw new Exception("Something went wrong!"); 
                 var departments = await _service.GetAllAsync();
                 return Ok(departments);
             }
