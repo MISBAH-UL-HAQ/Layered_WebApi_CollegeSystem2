@@ -45,7 +45,6 @@ namespace CollegeSystem2.Tests.Controllers
             var okResult = Assert.IsType<OkObjectResult>(actionResult.Result);
             var returnValue = Assert.IsType<List<DepartmentDTO>>(okResult.Value);
 
-            // Ensure the returned list has the expected count
             Assert.Equal(2, returnValue.Count);
         }
 
