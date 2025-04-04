@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Application.DTOs;
+using Domain.Entities;
 
 namespace CollegeSystem2.Controllers
 {
@@ -43,7 +44,7 @@ namespace CollegeSystem2.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] StudentDTO dto)
         {
-            if (id != dto.Id) return BadRequest("ID mismatch");
+            dto.Id = id;
 
             var updatedStudent = await _service.UpdateAsync(dto);
             if (updatedStudent == null) return NotFound();

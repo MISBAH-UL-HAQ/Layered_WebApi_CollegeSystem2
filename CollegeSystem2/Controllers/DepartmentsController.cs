@@ -46,16 +46,18 @@ namespace CollegeSystem2.Controllers
             return CreatedAtAction(nameof(GetById), new { id = createdDepartment.Id }, createdDepartment);
         }
 
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] DepartmentDTO dto)
         {
-            if (id != dto.Id) return BadRequest("ID mismatch");
-
+            dto.Id = id;
             var updatedDepartment = await _service.UpdateAsync(dto);
             if (updatedDepartment == null) return NotFound();
-
             return NoContent();
         }
+
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
