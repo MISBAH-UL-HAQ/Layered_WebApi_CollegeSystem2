@@ -1,4 +1,4 @@
-# 📚 CollegeSystem2 – College Management System API
+# 📚 CollegeSystem – College Management System API
 *An API built using Clean Architecture principles for managing college-related data such as Departments and Students. This project leverages ASP.NET Core 8, Entity Framework Core, and follows best practices like Separation of Concerns and Dependency Inversion.*
 
 ## 🧱  Project Structure
