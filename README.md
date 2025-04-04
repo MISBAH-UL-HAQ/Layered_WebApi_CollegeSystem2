@@ -44,7 +44,6 @@ CollegeSystem2/
 **-** **Dependency Injection: .NET Core DI Container**
 
 ---
----
 
 ## 🚀 Getting Started
 
