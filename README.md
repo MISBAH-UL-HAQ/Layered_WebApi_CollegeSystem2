@@ -96,8 +96,8 @@ dotnet run
 **The API should now be running on:**
 
 - **[https://localhost:7220](https://localhost:7220)**
-### OR
-- ** [http://localhost:5222](http://localhost:5222)**
+#### OR
+- **[http://localhost:5222](http://localhost:5222)**
 
 **-** **Swagger UI is available for testing the endpoints.**
 
