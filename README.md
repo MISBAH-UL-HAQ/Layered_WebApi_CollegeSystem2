@@ -2,7 +2,7 @@
 *An API built using Clean Architecture principles for managing college-related data such as Departments and Students. This project leverages ASP.NET Core 8, Entity Framework Core, and follows best practices like Separation of Concerns and Dependency Inversion.*
 
 ## 🧱  Project Structure
-- The solution is organized into distinct layers to enforce clean separation and maintainability:**
+ The solution is organized into distinct layers to enforce clean separation and maintainability:
 
 
 ```
@@ -60,7 +60,7 @@ CollegeSystem2/
 
 ## 📥 Installation
 
-**-** **1. Clone the repository:**
+ **1. Clone the repository:**
 
 ```
 git clone https://github.com/MISBAH-UL-HAQ/Layered_WebApi_CollegeSystem2.git
@@ -71,9 +71,9 @@ cd Layered_WebApi_CollegeSystem2
 
  **2. Set up the database:**
 
-**-** **Update the connection string in `CollegeSystem2/appsettings.json` (e.g., change the server name or database as needed).**
+- **Update the connection string in `CollegeSystem2/appsettings.json` (e.g., change the server name or database as needed).**
 
-**-** **Open the Package Manager Console in Visual Studio and run:**
+- **Open the Package Manager Console in Visual Studio and run:**
 
 ```
 add-migration "InitialCreate"
@@ -93,11 +93,11 @@ cd CollegeSystem2
 dotnet run
 ```
 
-**-** **The API should now be running on:**
+**The API should now be running on:**
 
-**-** **[https://localhost:7220](https://localhost:7220)**
-
-**-** **or [http://localhost:5222](http://localhost:5222)**
+- **[https://localhost:7220](https://localhost:7220)**
+### OR
+- ** [http://localhost:5222](http://localhost:5222)**
 
 **-** **Swagger UI is available for testing the endpoints.**
 
@@ -105,7 +105,7 @@ dotnet run
 
 ## ✅ Testing
 
-**-** **To run the tests:**
+ **To run the tests:**
 
 ```
 cd CollegeSystem2.Tests
