@@ -2,11 +2,13 @@
 using Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CollegeSystem2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class DepartmentsController : ControllerBase
     {
         private readonly IDepartmentService _service;
