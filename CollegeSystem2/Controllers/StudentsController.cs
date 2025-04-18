@@ -3,11 +3,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Application.DTOs;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CollegeSystem2.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StudentsController : ControllerBase
     {
 
