@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Application.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    internal class IAuthRepository
+    public interface IAuthRepository
     {
+
+        Task<AuthResponseDto> RegisterAsync(RegisterUserDto dto);
+        Task<AuthResponseDto> LoginAsync(UserLoginDto dto);
+        Task<AuthResponseDto> LogOutAsync();
+
     }
 }
